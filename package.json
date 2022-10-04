@@ -1,0 +1,49 @@
+{
+  "name": "secret",
+  "version": "2.0.0",
+  "description": "Shamir's threshold secret sharing scheme for JavaScript.",
+  "main": "secrets.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0",
+    "grunt-check-modules": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0",
+    "grunt-contrib-watch": "^1.1",
+    "grunt-jasmine-nodejs": "^1.6",
+    "jasmine": "^3.4.0",
+    "jquery": "^3.4",
+    "uglify-js": "^3.6.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/grunt uglify",
+    "test": "./node_modules/.bin/jasmine",
+    "test-browser": "open SpecRunner.html",
+    "test-browser-min": "npm run build && open SpecRunnerMinified.html",
+    "test-benchmark": "npm run build && open benchmark/benchmark.html",
+    "watch": "./node_modules/.bin/grunt watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savour-labs/node-secret.git"
+  },
+  "keywords": [
+    "secret",
+    "sharing",
+    "shamir",
+    "cryptography",
+    "split"
+  ],
+  "author": "shijiang.guo",
+  "contributors": [
+    "Guoshijian <guoshijiang2012@163.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savour-labs/node-secret/issues"
+  },
+  "homepage": "https://github.com/savour-labs/node-secret#readme",
+  "typings": "./secrets.js.d.ts"
+}
