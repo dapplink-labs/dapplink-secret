@@ -113,6 +113,8 @@ You can also use it in the browser with an AMD module loading tool like [require
 - savour_secret.random()
 - savour_secret.str2hex()
 - savour_secret.hex2str()
+- savour_secret.xorShare()
+- savour_secret.inverseXor()
 
 ### savour_secret.share( secret, numShares, threshold, [padLength] )
 

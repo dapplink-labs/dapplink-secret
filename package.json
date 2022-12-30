@@ -1,6 +1,6 @@
 {
   "name": "savour-secret",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Shamir's threshold secret sharing scheme for JavaScript.",
   "main": "secrets.js",
   "directories": {

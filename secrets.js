@@ -1010,6 +1010,40 @@
             return x
         },
 
+        xorShare: function (str, xor, hex) {
+            if ( typeof str !== 'string' || typeof xor !== 'number' || typeof hex !== 'number') {
+                return;
+            }
+            const resultList = [];
+            hex = hex <= 25 ? hex : hex % 25;
+            for ( let i=0; i< str.length; i++ ) {
+                var charCode = str.charCodeAt(i);
+                charCode = (charCode * 1) ^ xor;
+                charCode = charCode.toString(hex);
+                resultList.push(charCode);
+            }
+            const splitStr = String.fromCharCode(hex + 97);
+            return resultList.join( splitStr );
+        },
+
+        inverseXor: function (str, xor, hex) {
+            if ( typeof str !== 'string' || typeof xor !== 'number' || typeof hex !== 'number') {
+                return;
+            }
+            var strCharList = [];
+            var resultList = [];
+            hex = hex <= 25 ? hex : hex % 25;
+            let splitStr = String.fromCharCode(hex + 97);
+            strCharList = str.split(splitStr);
+            for ( let i=0; i<strCharList.length; i++ ) {
+                let charCode = parseInt(strCharList[i], hex);
+                charCode = (charCode * 1) ^ xor;
+                let strChar = String.fromCharCode(charCode);
+                resultList.push(strChar);
+            }
+            return resultList.join('');
+        },
+
         // Generate a new share with id `id` (a number between 1 and 2^bits-1)
         // `id` can be a Number or a String in the default radix (16)
         newShare: function(id, shares) {

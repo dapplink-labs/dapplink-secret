@@ -164,3 +164,15 @@ export function _constructPublicShareString(
   id: string,
   data: string
 ): string
+
+export function xorShare(
+  str: string,
+  xor: number,
+  hex: number
+): string
+
+export function inverseXor(
+  str: string,
+  xor: number,
+  hex: number
+): string
