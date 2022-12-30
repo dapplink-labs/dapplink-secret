@@ -79,10 +79,10 @@ There are some additional examples of simple usage in the browser, Node.js, and 
 
 ## Installation and usage
 
-This fork of node-secret is available from [www.npmjs.com](https://www.npmjs.com/package/node-secret-savour-labs). Install using
+This fork of node-secret is available from [www.npmjs.com](https://www.npmjs.com/package/savour-secret). Install using
 
 ```bash
-npm install node-secret-savour-labs
+npm install savour-secret-savour-labs
 ```
 
 The source code for this package is available on [Github](https://github.com/savour-labs/node-secret).
@@ -90,7 +90,7 @@ The source code for this package is available on [Github](https://github.com/sav
 To use it in a Node.js application (Requires OpenSSL support compiled into Node):
 
 ```javascript
-var node-secret = require("node-secret")
+var node-secret = require("savour-secret")
 ```
 
 To use it in the browser with the global 'node-secret' defined, include _node-secret_ or _node-secret.min.js_ in your HTML.
@@ -246,7 +246,7 @@ There is a [workbook containing some additional padding examples](https://github
 ## Development and Testing
 
 ```bash
-cd node-secret/
+cd savour-secret/
 npm install
 ```
 
