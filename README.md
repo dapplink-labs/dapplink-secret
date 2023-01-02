@@ -82,7 +82,7 @@ There are some additional examples of simple usage in the browser, Node.js, and 
 This fork of savour-secret is available from [www.npmjs.com](https://www.npmjs.com/package/savour-secret). Install using
 
 ```bash
-npm install savour-secret-savour-labs
+npm install savour-secret
 ```
 
 The source code for this package is available on [Github](https://github.com/savour-labs/savour-secret).
