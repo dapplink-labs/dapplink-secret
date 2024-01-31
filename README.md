@@ -8,34 +8,34 @@ parent:
 </div>
 
 <div align="center">
-  <a href="https://github.com/savour-labs/savour-secret/releases/latest">
-    <img alt="Version" src="https://img.shields.io/github/tag/savour-labs/savour-secret.svg" />
+  <a href="https://github.com/savour-labs/dapplink-secret/releases/latest">
+    <img alt="Version" src="https://img.shields.io/github/tag/savour-labs/dapplink-secret.svg" />
   </a>
-  <a href="https://github.com/savour-labs/savour-secret/blob/main/LICENSE">
-    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/savour-labs/savour-secret.svg" />
+  <a href="https://github.com/savour-labs/dapplink-secret/blob/main/LICENSE">
+    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/savour-labs/dapplink-secret.svg" />
   </a>
 </div>
 
-savour-secret is an implementation of [Shamir's threshold secret sharing scheme](http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) in JavaScript, for Node.js and browsers with both Global variable and AMD module loading support.
+dapplink-secret is an implementation of [Shamir's threshold secret sharing scheme](http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) in JavaScript, for Node.js and browsers with both Global variable and AMD module loading support.
 
 It can be used to split any "secret" (i.e. a password, text file, Bitcoin private key, anything) into _n_ number of "shares" (each the same size in bits as the original secret), requiring that exactly any number _t_ ("threshold") of them be present to reconstruct the original secret.
 
-This is a fork of the original excellent code created by `amper5and` on Github. The [original savour-secret can be found there](https://github.com/savour-labs/savour-secret/).
+This is a fork of the original excellent code created by `amper5and` on Github. The [original dapplink-secret can be found there](https://github.com/savour-labs/dapplink-secret/).
 
 ## Install
 
 ### Install dependencies
 ```bash
-npm install 
+npm install
 ```
 ### build
 ```bash
 npm run build
 ```
 
-### example 
+### example
 ```bash
-const savoursecret = require("savour-secret")
+const savoursecret = require("dapplink-secret")
 
 const key = savoursecret.random(512)
 console.log("key=", key)
@@ -74,12 +74,12 @@ console.log("key_recover=", key_recover)
 
 ### 1.fork repo
 
-fork savour-secret to your github
+fork dapplink-secret to your github
 
 ### 2.clone repo
 
 ```bash
-git@github.com:guoshijiang/savour-secret.git
+git@github.com:guoshijiang/dapplink-secret.git
 ```
 
 ### 3. create new branch and commit code
@@ -99,9 +99,9 @@ git push origin xxx
 
 Have a pr on your github and submit it to the savour-hd repository
 
-### 5.review 
+### 5.review
 
-After the savour-secret code maintainer has passed the review, the code will be merged into the savour-secret library. At this point, your PR submission is complete
+After the dapplink-secret code maintainer has passed the review, the code will be merged into the dapplink-secret library. At this point, your PR submission is complete
 
 
 

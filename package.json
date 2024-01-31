@@ -1,5 +1,5 @@
 {
-  "name": "savour-secret",
+  "name": "dapplink-secret",
   "version": "1.0.5",
   "description": "Shamir's threshold secret sharing scheme for JavaScript.",
   "main": "secrets.js",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savour-labs/node-secret.git"
+    "url": "git+https://github.com/eniac-x-labs/node-secret.git"
   },
   "keywords": [
     "secret",
@@ -42,8 +42,8 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/savour-labs/node-secret/issues"
+    "url": "https://github.com/eniac-x-labs/node-secret/issues"
   },
-  "homepage": "https://github.com/savour-labs/node-secret#readme",
+  "homepage": "https://github.com/eniac-x-labs/node-secret#readme",
   "typings": "./secrets.js.d.ts"
 }
